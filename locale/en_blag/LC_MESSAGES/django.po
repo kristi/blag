@@ -574,7 +574,7 @@ msgstr ""
 
 #: forum/actions/node.py:20 forum/templatetags/node_tags.py:222
 msgid "asked"
-msgstr ""
+msgstr "posted"
 
 #: forum/actions/node.py:32
 #, fuzzy, python-format
@@ -583,7 +583,7 @@ msgstr "unanswered"
 
 #: forum/actions/node.py:38 forum/templatetags/node_tags.py:223
 msgid "answered"
-msgstr ""
+msgstr "written"
 
 #: forum/actions/node.py:50
 #, fuzzy, python-format
@@ -1309,7 +1309,7 @@ msgstr ""
 
 #: forum/models/user.py:209 forum/views/readers.py:133
 msgid "asked-by"
-msgstr ""
+msgstr "posted-by"
 
 #: forum/models/user.py:217 forum/views/readers.py:136
 #, fuzzy
@@ -3838,7 +3838,7 @@ msgstr ""
 
 #: forum/skins/default/templates/question.html:301
 msgid "question asked"
-msgstr "Asked"
+msgstr "Posted"
 
 #: forum/skins/default/templates/question.html:304
 msgid "question was seen"
@@ -5493,7 +5493,7 @@ msgstr ""
 
 #: forum/skins/default/templates/question_list/sort_tabs.html:5
 msgid "most recently asked questions"
-msgstr "most recently asked posts"
+msgstr "most recently posted"
 
 #: forum/skins/default/templates/question_list/sort_tabs.html:5
 #: forum/views/readers.py:46 forum/views/readers.py:62
