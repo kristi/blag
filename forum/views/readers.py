@@ -34,7 +34,7 @@ class HottestQuestionsSort(pagination.SortBase):
 
 
 class QuestionListPaginatorContext(pagination.PaginatorContext):
-    def __init__(self, id='QUESTIONS_LIST', prefix='', pagesizes=(15, 30, 50), default_pagesize=30):
+    def __init__(self, id='QUESTIONS_LIST', prefix='', pagesizes=(5, 10, 30), default_pagesize=5):
         super (QuestionListPaginatorContext, self).__init__(id, sort_methods=(
             (_('active'), pagination.SimpleSort(_('active'), '-last_activity_at', _("Most <strong>recently updated</strong> questions"))),
             (_('newest'), pagination.SimpleSort(_('newest'), '-added_at', _("most <strong>recently asked</strong> questions"))),
