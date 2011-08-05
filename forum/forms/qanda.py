@@ -177,6 +177,7 @@ class AskForm(forms.Form):
             self.fields['wiki'] = WikiField()
 
 class AnswerForm(forms.Form):
+    title  = TitleField()
     text   = AnswerEditorField()
     wiki   = WikiField()
 
@@ -254,6 +255,7 @@ class EditQuestionForm(forms.Form):
             self.fields['wiki'] = WikiField(disabled=(question.nis.wiki and not user.can_cancel_wiki(question)), initial=question.nis.wiki)
 
 class EditAnswerForm(forms.Form):
+    title  = TitleField()
     text = AnswerEditorField()
     summary = SummaryField()
 
@@ -263,6 +265,7 @@ class EditAnswerForm(forms.Form):
         if revision is None:
             revision = answer.active_revision
 
+        self.fields['title'].initial = revision.title
         self.fields['text'].initial = revision.body
 
         if int(user.reputation) < settings.CAPTCHA_IF_REP_LESS_THAN and not (user.is_superuser or user.is_staff):

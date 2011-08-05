@@ -168,6 +168,7 @@
                                 </td>
                                 <td>
                                     <div class="item-right">
+                                        <h2>{{ answer.title }}</h2>
                                         <div class="answer-body">
                                             {{ answer.html|safe }}
                                         </div>
@@ -224,6 +225,8 @@
                     </p>
                 {% endif %}
                 {% endcomment %}
+                <label for="id_title" ><strong>{{ answer.title.label_tag }}:</strong></label> <span class="form-error"></span><br/>
+                {{ answer.title }} {{ answer.title.errors }}
 
                 <div id="description" class="" >
                     <div id="wmd-button-bar" class="wmd-panel"></div>
