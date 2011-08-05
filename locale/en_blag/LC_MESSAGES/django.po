@@ -3106,7 +3106,7 @@ msgstr "see frequently posted topics"
 #: forum/skins/default/templates/ask.html:4
 #: forum/skins/default/templates/ask.html:92
 msgid "Ask a question"
-msgstr "Create a post"
+msgstr "Create post summary"
 
 #: forum/skins/default/templates/ask.html:100
 msgid "You are welcome to start submitting your question anonymously."
@@ -3768,7 +3768,7 @@ msgstr "Add a section"
 
 #: forum/skins/default/templates/question.html:199
 msgid "Be the first one to answer this question!"
-msgstr "Be the first one to answer this post!"
+msgstr "Now, start adding sections"
 
 #: forum/skins/default/templates/question.html:206
 #, fuzzy
