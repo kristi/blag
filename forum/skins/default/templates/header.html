@@ -7,17 +7,7 @@
 		    {% loadregistry header_links %}{% endloadregistry %}
 		</div>
 	  
-{% comment %}
-    <div id="nav">
-        {% loopregistry page_top_tabs %}{% spaceless %}
-            <a id="nav_{{ tab_name }}"{% ifequal tab tab_name %} class="on"{% endifequal %} href="{{ tab_url }}" >{{ tab_title }}</a>
-        {% endspaceless %}{% endloopregistry %}
-    {% if request.user.is_authenticated %}
-        <a id="nav_ask" href="{% url ask %}" class="special">{% trans "ask a question" %}</a>
-    {% endif %}
     </div>
-{% endcomment %}
-  </div>
 
   <div class="clear"></div>
 
@@ -27,7 +17,20 @@
         </a>
     </div>
 
+  <div class="wrap">
+    <div id="nav">
+{% comment %}
+        {% loopregistry page_top_tabs %}{% spaceless %}
+            <a id="nav_{{ tab_name }}"{% ifequal tab tab_name %} class="on"{% endifequal %} href="{{ tab_url }}" >{{ tab_title }}</a>
+        {% endspaceless %}{% endloopregistry %}
+{% endcomment %}
+    {% if request.user.is_authenticated %}
+        <a id="nav_ask" href="{% url ask %}" class="special">{% trans "ask a question" %}</a>
+    {% endif %}
+    </div>
+  </div>
   
+  <div class="clear"></div>
 	<div id="searchBar">
     <form action="{% url search %}" method="get">
         {% csrf_token %}
