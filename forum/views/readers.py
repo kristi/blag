@@ -55,7 +55,7 @@ class AnswerPaginatorContext(pagination.PaginatorContext):
             (_('oldest'), AnswerSort(_('oldest answers'), 'added_at', _("oldest answers will be shown first"))),
             (_('newest'), AnswerSort(_('newest answers'), '-added_at', _("newest answers will be shown first"))),
             (_('votes'), AnswerSort(_('popular answers'), ('-score', 'added_at'), _("most voted answers will be shown first"))),
-        ), default_sort=_('votes'), pagesizes=(5, 10, 20), default_pagesize=default_pagesize, prefix=prefix)
+        ), default_sort=_('oldest'), pagesizes=(5, 10, 20), default_pagesize=default_pagesize, prefix=prefix)
 
 class TagPaginatorContext(pagination.PaginatorContext):
     def __init__(self):
