@@ -35,11 +35,13 @@
 {% endblock %}
 
 {% block sidebar %}
+{% comment %}
     {% include "question_list/count.html" %}
     {% sidebar_upper %}
     {% tag_selector %}
     {% sidebar_lower %}
     {% question_list_related_tags questions.paginator.page %}
+{% endcomment %}
 
 {% endblock %}
 <!-- end questions.html -->
