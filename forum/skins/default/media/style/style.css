@@ -10,6 +10,7 @@ body {
     line-height: 150%;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 div {
@@ -440,12 +441,16 @@ blockquote blockquote {
 }
 
 .boxC {
+/*
     background: none repeat scroll 0 0 #E5EBF8;
     border-color: #EEEEEC #A9ACA5 #BABDB6 #EEEEEC;
     border-style: solid;
     border-width: 1px;
+*/
+    border-bottom: 1px solid #BABDB6;
     margin-bottom: 8px;
     padding: 10px;
+    color: #888888;
 }
 
 .boxC p {
@@ -772,26 +777,36 @@ div.question-body p, div.answer-body p {
 }
 
 .answered-by-owner {
+/*
     background: none repeat scroll 0 0 #E9E9FF;
+*/
 }
 
 .accepted-answer {
+/*
     background-color: #EBFFE6;
+*/
     border-bottom-color: #9BD59B;
 }
 
 .answered {
+/*
     background: none repeat scroll 0 0 #E5EBF8;
+*/
     color: #314362;
 }
 
 .answered-accepted, .answer-votes.answered-accepted {
+/*
     background: none repeat scroll 0 0 #E6F8DD;
+*/
     color: #3A6231;
 }
 
 .unanswered {
+/*
     background: none repeat scroll 0 0 #F3E3E1;
+*/
     color: #6B2B28;
 }
 

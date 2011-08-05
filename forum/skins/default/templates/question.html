@@ -142,6 +142,7 @@
             {% endif %}
             {% if answers %}
                 <hr/>
+{% comment %}
                 <div class="tabBar">
                     <a name="sort-top"></a>
                     <div class="headQuestions">
@@ -149,6 +150,7 @@
                     </div>
                     {{ answers.paginator.sort_tabs }}
                 </div>
+{% endcomment %}
                 {{ answers.paginator.page_numbers }}
   
                 {% for answer in answers.paginator.page %}
@@ -157,10 +159,12 @@
                         <table style="width:100%;">
                             <tr>
                                 <td style="width:30px;vertical-align:top">
+{% comment %}
                                     <div class="vote-buttons">
                                         {% vote_buttons answer request.user %}
                                         {% accept_button answer request.user %}
                                     </div>
+{% endcomment %}
                                 </td>
                                 <td>
                                     <div class="item-right">
@@ -185,6 +189,7 @@
                     {{ answers.paginator.page_numbers }}
                 </div>
             {% endif %}
+    {% if request.user.is_authenticated and request.user.is_a_super_user_or_staff %}
         <form id="fmanswer" action="{% url answer question.id %}" method="post">
             {% csrf_token %}
             <div style="clear:both">
@@ -272,6 +277,7 @@
                     class="submit" style="float:left" onclick="submitClicked(event, this.form)"/>
             {% endif %}
         </form>
+    {% endif %}
     </div>
 </div>
 {% endblock %}
@@ -287,9 +293,7 @@
 
 {% cache 60 questions_tags settings.APP_URL question.id %}
 <div class="boxC">
-    <p>
-		{% trans "Question tags" %}:
-    </p>
+    <h3>{% trans "Question tags" %}:</h3>
     <p class="tags" >
         {% for tag in question.tags.all %}
         	<a href="{% url tag_questions tag.name|urlencode %}"
