@@ -1114,7 +1114,7 @@ msgstr "section content must be at least %s characters"
 #: forum/forms/qanda.py:73 forum/skins/default/templates/header.html:36
 #: forum/skins/default/templates/search.html:21 forum/views/readers.py:250
 msgid "tags"
-msgstr ""
+msgstr "Tags"
 
 #: forum/forms/qanda.py:75
 #, python-format
@@ -3106,7 +3106,7 @@ msgstr "see frequently posted topics"
 #: forum/skins/default/templates/ask.html:4
 #: forum/skins/default/templates/ask.html:92
 msgid "Ask a question"
-msgstr "Ask a post"
+msgstr "Create a post"
 
 #: forum/skins/default/templates/ask.html:100
 msgid "You are welcome to start submitting your question anonymously."
@@ -3343,7 +3343,7 @@ msgstr ""
 
 #: forum/skins/default/templates/header.html:20
 msgid "ask a question"
-msgstr "create a post"
+msgstr "Create a post"
 
 #: forum/skins/default/templates/header.html:31
 #: forum/skins/default/templates/opensearch.html:7
@@ -3356,12 +3356,12 @@ msgstr ""
 #: forum/views/readers.py:101 forum/views/readers.py:157
 #: forum/views/users.py:318
 msgid "questions"
-msgstr "posts"
+msgstr "Posts"
 
 #: forum/skins/default/templates/header.html:37
 #: forum/skins/default/templates/search.html:22 forum/views/users.py:60
 msgid "users"
-msgstr ""
+msgstr "Users"
 
 #: forum/skins/default/templates/index.html:11
 #, fuzzy
@@ -3756,15 +3756,15 @@ msgid ""
 msgstr ""
 
 #: forum/skins/default/templates/question.html:147
-#, fuzzy, python-format
+#, python-format
 msgid "One Answer:"
 msgid_plural "%(counter)s Answers:"
-msgstr[0] "newest"
-msgstr[1] "newest"
+msgstr[0] "One Section:"
+msgstr[1] "%(counter)s Sections:"
 
 #: forum/skins/default/templates/question.html:197
 msgid "Your answer"
-msgstr ""
+msgstr "Add a section"
 
 #: forum/skins/default/templates/question.html:199
 msgid "Be the first one to answer this question!"
@@ -3958,9 +3958,8 @@ msgid ""
 msgstr ""
 
 #: forum/skins/default/templates/subscription_status.html:3
-#, fuzzy
 msgid "Follow this question"
-msgstr "Post Your Answer"
+msgstr "Follow this post"
 
 #: forum/skins/default/templates/subscription_status.html:4
 #, fuzzy
@@ -5573,12 +5572,10 @@ msgstr "Unanswered posts"
 
 #: forum/skins/default/templates/question_list/title.html:20
 #: forum/views/readers.py:159
-#, fuzzy
 msgid "All Questions"
-msgstr "Tags"
+msgstr "All Posts"
 
 #: forum/skins/default/templates/sidebar/markdown_help.html:3
-#, fuzzy
 msgid "Markdown Basics"
 msgstr "Markdown basics"
 
@@ -5765,7 +5762,7 @@ msgstr "No favorite posts to display."
 #: forum/skins/default/templates/users/signature.html:23
 #: forum/templatetags/extra_tags.py:78 forum/views/meta.py:90
 msgid "badges"
-msgstr ""
+msgstr "Badges"
 
 #: forum/skins/default/templates/users/signature.html:31
 #: forum/templatetags/extra_tags.py:51
@@ -6085,9 +6082,8 @@ msgid "yesterday"
 msgstr ""
 
 #: forum/templatetags/extra_tags.py:153
-#, fuzzy
 msgid "hour ago"
-msgstr "tags"
+msgstr ""
 
 #: forum/templatetags/extra_tags.py:153
 msgid "hours ago"
@@ -6175,7 +6171,7 @@ msgstr ""
 #: forum/templatetags/node_tags.py:136
 #, fuzzy
 msgid "see revisions"
-msgstr "unanswered"
+msgstr "Unanswered"
 
 #: forum/templatetags/node_tags.py:143
 msgid "mark as community wiki"
@@ -6750,9 +6746,8 @@ msgid "latest questions"
 msgstr "latest posts"
 
 #: forum/views/readers.py:91
-#, fuzzy
 msgid "unanswered"
-msgstr "answer"
+msgstr "Unanswered"
 
 #: forum/views/readers.py:95
 msgid "open questions without an accepted answer"
@@ -6761,7 +6756,7 @@ msgstr "open posts without an accepted answer"
 #: forum/views/readers.py:97
 #, fuzzy
 msgid "Unanswered Questions"
-msgstr "unanswered"
+msgstr "Unanswered"
 
 #: forum/views/readers.py:124
 #, python-format
@@ -6795,7 +6790,7 @@ msgstr ""
 
 #: forum/views/readers.py:172
 msgid "Questions"
-msgstr ""
+msgstr "Posts"
 
 #: forum/views/readers.py:235 forum/views/readers.py:236
 msgid "ranking"
