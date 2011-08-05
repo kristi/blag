@@ -19,7 +19,7 @@
 
 {% block content %}
 
-<div class="tabBar">
+<div class="tabBar" style="display:none;">
     {% include "question_list/title.html" %}
     <a class="feed-icon" style="background-image:url('{% media "media/images/feed-icon-small.png" %}');" href="{{ feed_url }}" title="{% trans "subscribe to question RSS feed" %}"></a>
     {{ questions.paginator.sort_tabs }}

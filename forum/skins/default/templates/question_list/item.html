@@ -21,7 +21,8 @@
     </div>
 
     <div class="question-summary-wrapper">
-        <h2><a title="{{ question.summary }}" href="{{ question.get_absolute_url }}">{{question.headline}}</a></h2>
+        <h2><a title="{{ question.title }}" href="{{ question.get_absolute_url }}">{{question.headline}}</a></h2>
+        <div class="question-body">{{ question.html|safe }}</div>
         <div class="userinfo">
             <span class="relativetime" title="{{question.last_activity_at}}">{% diff_date question.last_activity_at %}</span>
             {% if question.last_activity_by %}{% user_signature question.last_activity_by signature_type %}{% endif %}
