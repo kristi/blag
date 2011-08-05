@@ -5,6 +5,7 @@
 {% load i18n %}
 {% block fulltitle %}{{ settings.APP_TITLE }}{% endblock %}
 {% block sidebar %}
+{% comment  %}
     {% if not request.user.is_authenticated %}
         {% if settings.SHOW_WELCOME_BOX %}
             <div class="boxA">
@@ -25,6 +26,7 @@
     {% sidebar_lower %}
     {% recent_tags %}
     {% recent_awards %}
+{% endcomment  %}
 {% endblock %}
 <!-- index.html -->
 
