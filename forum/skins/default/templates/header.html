@@ -24,7 +24,7 @@
             <a id="nav_{{ tab_name }}"{% ifequal tab tab_name %} class="on"{% endifequal %} href="{{ tab_url }}" >{{ tab_title }}</a>
         {% endspaceless %}{% endloopregistry %}
 {% endcomment %}
-    {% if request.user.is_authenticated %}
+    {% if request.user.is_authenticated and request.user.is_a_super_user_or_staff %}
         <a id="nav_ask" href="{% url ask %}" class="special">{% trans "ask a question" %}</a>
     {% endif %}
     </div>
